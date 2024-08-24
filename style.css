@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    color: #fff;
+    /* background-color: #01171f ; */
+    /* background: -webkit-linear-gradient(90deg,#2b1263,#3a00ed); */
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* background: linear-gradient(90deg,#2b1263,#3a00ed); */
+    background: radial-gradient(circle,#2b1263,#3a00ed);
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#main{
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#identificacao{
+    margin: 0 0 60px 0;
+}
+
+#fotoPerfil{
+    border: 3px solid #c4c4cc57 ;
+    border-radius: 50%;
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+}
+
+#identificacao > h1{
+    font-size: 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.4);
+    vertical-align: middle;
+}
+
+#verify{
+    width: 25px;
+    vertical-align: middle;
+    fill: #0795fa;
+}
+
+#identificacao > h2{
+    color: rgba(255, 255, 255, 0.606);
+}
+
+#cardPrincipal{
+    margin: 0 0 80px 0;
+}
+
+.links{
+    margin: 0 0 20px 0;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid rgba(200, 229, 255, .5);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .04) ;
+    transition: .3s;
+}
+
+.links:hover{
+    background-color: transparent;
+}
+
+.redesocial{
+    margin: 0 0 80px 0;
+}
+
+.redesocial > a{
+    padding: 16px;
+    margin: 0 10px;
+    /* border: 1px solid red; */
+}
+
+.redesocial img{
+    vertical-align: middle;
+    width: 30px;
+}
+
+#iconeInstagram, #iconeGit{
+    width: 30px;
+    vertical-align: middle;
+}
+
+#iconeYoutube, #iconeLinkdin{
+    width: 40px;
+    vertical-align: middle;
+}
+
+#linkInstagram, #linkYoutube, #linkLinkedin{
+    transition: .3s;
+}
+
+#linkInstagram:hover{
+    color: rgb(241, 105, 241);
+}
+
+#linkYoutube:hover{
+    color: #f34147;
+}
+
+#linkLinkedin:hover{
+    color: #0795fa;
+}
+
+#rodape{
+    font-family: "Roboto", sans-serif;
+}
+
+#rodape > h3{
+    margin: 0 0 10px 0;
+    color: #ffffff3a;
+}
+
+#rodape  span{
+color: #f34147;
+}
