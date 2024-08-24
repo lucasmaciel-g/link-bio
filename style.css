@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&family=Poppins:wght@400;700&family=Roboto&display=swap');
 
 *{
     margin: 0;
@@ -8,13 +8,13 @@
 
 body{
     color: #fff;
-    /* background-color: #01171f ; */
-    /* background: -webkit-linear-gradient(90deg,#2b1263,#3a00ed); */
-    background-repeat: no-repeat;
-    height: 100vh;
-    /* background: linear-gradient(90deg,#2b1263,#3a00ed); */
-    background: radial-gradient(circle,#2b1263,#3a00ed);
+    min-height: 100vh;
+    background: -webkit-linear-gradient(to top left,#408197,#304869,#24132f);
+    background: linear-gradient(to top left,#408197,#304869,#24132f);
     font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a{
@@ -23,69 +23,90 @@ a{
 }
 
 #main{
-    width: 500px;
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
+    max-width: 580px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #identificacao{
-    margin: 0 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 40px 0;
 }
 
 #fotoPerfil{
     border: 3px solid #c4c4cc57 ;
     border-radius: 50%;
-    width: 30%;
-    margin: 0 auto;
-    display: block;
+    max-width: 120px;
 }
 
-#identificacao > h1{
-    font-size: 20px;
-    margin: 8px 0;
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.4);
-    vertical-align: middle;
+.identificacao_usuario{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0 0 0;
 }
 
+#identificacao  h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #fbfbfbe0;
+}
 #verify{
-    width: 25px;
-    vertical-align: middle;
+    width: 20px;
+    height: 20px;
     fill: #0795fa;
 }
 
-#identificacao > h2{
-    color: rgba(255, 255, 255, 0.606);
+#identificacao  h2{
+    color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 15px 0 0 0;
+    font-size: 20px;
 }
 
-#cardPrincipal{
-    margin: 0 0 80px 0;
+#menuLinks{
+    margin: 0 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .links{
-    margin: 0 0 20px 0;
-    padding: 15px;
-    width: 100%;
-    font-size: 20px;
-    border: 1px solid rgba(200, 229, 255, .5);
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, .04) ;
-    transition: .3s;
+    padding: 16px 15px;
+    border: 1.5px solid #ffffff84;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .04);
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 30px;
+    color: #ffffffbc;
 }
 
 .links:hover{
     background-color: transparent;
 }
 
-.redesocial{
-    margin: 0 0 80px 0;
+.imagemNome{
+    display: flex;
+    gap: 10px;
 }
 
-.redesocial > a{
-    padding: 16px;
-    margin: 0 10px;
-    /* border: 1px solid red; */
+.redesocial{
+    margin: 0 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .redesocial img{
@@ -95,12 +116,10 @@ a{
 
 #iconeInstagram, #iconeGit{
     width: 30px;
-    vertical-align: middle;
 }
 
 #iconeYoutube, #iconeLinkdin{
     width: 40px;
-    vertical-align: middle;
 }
 
 #linkInstagram, #linkYoutube, #linkLinkedin{
@@ -123,9 +142,9 @@ a{
     font-family: "Roboto", sans-serif;
 }
 
-#rodape > h3{
-    margin: 0 0 10px 0;
-    color: #ffffff3a;
+#rodape  h3{
+    color: #c4c4cc5f;
+    font-size: 16px;
 }
 
 #rodape  span{
